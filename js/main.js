@@ -1,3 +1,14 @@
+/*
+	Scrolling Slider
+	by Richard Bultitude
+
+	A JavaScript plugin that scrolls a horizonal container
+	via left/right controls
+	on hover or using the scrollbar
+
+	Depends on JQuery and JQuery Debounce Throttle
+ */
+
 $(document).ready(function() {
 
 	//Interval  vars
@@ -69,7 +80,6 @@ $(document).ready(function() {
 	}
 
 	container.scroll(function() {
-		// var scrollLeft = $(this).scrollLeft();
 		hideControlsAtEnd();
 	});
 

@@ -91,7 +91,7 @@ textarea {
     overflow: hidden;
 }
 
-.container {
+.carousel {
     width: 100%;
     overflow-x: scroll;
     overflow-y: visible;
