@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Richard Bultitude -- Developer
 
 # THANKS
 
-    <name>
+    Stack Overflow
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery, JQuery Debounce Throttle, Modernizr
