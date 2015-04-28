@@ -222,7 +222,7 @@ $(document).ready(function() {
 		}
 
 		function killDirection() {
-			controls.css({
+			scrollingSlider.controls.css({
 				'display': 'none'
 			}).addClass('inactive');
 		}

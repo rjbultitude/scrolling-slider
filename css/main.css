@@ -119,18 +119,52 @@ textarea {
     position: absolute;
     z-index: 6;
     top: 0;
+    background-color: #cccccc;
+    opacity: 0.6;
+    /*this defines the ineractive area*/
     width: 15%;
     height: 53.75em;
 }
 
+.direction-control .text {
+    position: absolute;
+    top: 48%;
+    width: 5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .direction-control-left {
-    background-color: #cccccc;
+    left: 0;
+}
+
+.direction-control-left .text {
+    left: 2em;
+}
+
+.direction-control-right .text {
+    right: 2em;
+}
+
+.direction-control-left .text:before {
+    content: "\2329";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: 0;
 }
 
 .direction-control-right {
-    background-color: #cccccc;
     right: 0;
     left: auto;
+}
+
+.direction-control-right .text:after {
+    content: "\232A";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    right: 0;
 }
 
 .carousel-list {
@@ -144,13 +178,23 @@ textarea {
 .carousel-list li {
     width: 200px;
     height: 53.75em;
-    background: blue;
+    background: #3466D1;
     float: left;
     list-style-type: none;
 }
 
 .carousel-list li:nth-child(2n) {
-    background-color: black;
+    background-color: #DE8D40;
+}
+
+@media all and ( max-width: 480px ) {
+    .carousel-list {
+        width: 100%;
+    }
+
+    .carousel-list li {
+        width: 100%;
+    }
 }
 
 
