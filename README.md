@@ -15,10 +15,15 @@ In the future I will make it fully CJS and AMD compatible
 ## Features
 
 * Items can be any size and different sizes
-* Left/Rright Controls are hidden when fully scrolled left/right
-* Depends on JQuery and JQUery Debounce Throttle
+* Left/Right Controls are hidden when fully scrolled left/right
+* Depends on JQuery and JQuery Debounce Throttle
 * supports two layout modes: standard and mobile
+* Controls are hidden if the list contents are smaller then the container
 
+
+## References
+[JQuery](https://jquery.com/)
+Ben Alman's [Debounce Throttle JQuery plugin](https://github.com/cowboy/jquery-throttle-debounce)
 
 ## Documentation
 
