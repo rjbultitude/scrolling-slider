@@ -123,7 +123,7 @@ textarea {
     opacity: 0.6;
     /*this defines the ineractive area*/
     width: 15%;
-    height: 53.75em;
+    height: 150px;
 }
 
 .direction-control .text {
@@ -177,7 +177,7 @@ textarea {
 
 .carousel-list li {
     width: 200px;
-    height: 53.75em;
+    height: 150px;
     background: #3466D1;
     float: left;
     list-style-type: none;
