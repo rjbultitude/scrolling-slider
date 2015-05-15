@@ -184,7 +184,7 @@ textarea {
 }
 
 .carousel-list li:nth-child(2n) {
-    background-color: #DE8D40;
+    background-color: #8aa1d4;
 }
 
 @media all and ( max-width: 480px ) {
