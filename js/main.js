@@ -1,5 +1,5 @@
 /*
-	Scrolling Slider
+	Scrolling Slider JS
 	by Richard Bultitude
 
 	A JavaScript plugin that scrolls a horizonal container
@@ -7,11 +7,14 @@
 	on hover or using the scrollbar
 
 	Depends on JQuery and JQuery Debounce Throttle
+	JQuery http://code.jquery.com/jquery-1.11.1.js
+	JQuery Throttle Debounce https://github.com/cowboy/jquery-throttle-debounce
+
+	To use with Require.js or CJS applications simply run the file after JQuery has loaded
+
  */
 
 $(document).ready(function() {
-
-	//var scrollingSlider = scrollingSlider || {};
 
 	(function(scrollingSlider) {
 		if (scrollingSlider !== undefined) {

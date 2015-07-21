@@ -95,7 +95,8 @@ a:hover {
     }
 }
 
-article {
+article,
+footer {
     padding: 5rem 6rem;
 }
 
