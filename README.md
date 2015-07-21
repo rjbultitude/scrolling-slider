@@ -7,19 +7,22 @@ A JavaScript plugin which moves list items left/right on hover or via the scroll
 
 ## Quick start
 
-Simply load and run the script in any app
+Install [JQuery 1.11+](http://code.jquery.com/jquery-1.11.1.js) and [Debounce Throttle](https://github.com/cowboy/jquery-throttle-debounce) in your apllication
 
-In the future I will make it fully CJS and AMD compatible
+Then load ScrollingSlider.js
 
 
 ## Features
 
-* Items can be any size and different sizes
+* List items can be any width
+* List items can each be a different width
 * Left/Right Controls are hidden when fully scrolled left/right
-* Depends on JQuery and JQuery Debounce Throttle
-* supports two layout modes: standard and mobile
+* Supports two layout modes: standard and mobile
 * Controls are hidden if the list contents are smaller then the container
 
+
+## Caveats
+* Depends on JQuery and JQuery Debounce Throttle
 
 ## References
 [JQuery](https://jquery.com/)
