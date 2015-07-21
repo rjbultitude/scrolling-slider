@@ -11,6 +11,8 @@
 
 $(document).ready(function() {
 
+	//var scrollingSlider = scrollingSlider || {};
+
 	(function(scrollingSlider) {
 		if (scrollingSlider !== undefined) {
 			console.log('An object with this name already exists');
