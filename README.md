@@ -15,7 +15,7 @@ Then load ScrollingSlider.js
 ## Features
 
 * Items can be any size and different sizes
-* The speed of the scroll action slows down towards the edges of the container and speeds up towards the middle
+* The speed of the scroll action speeds up towards the edges of the container and slows down towards the middle
 * Left/right Controls are hidden when fully scrolled left/right
 * Controls and be any size as long as they don't overlap
 * Supports two layout modes: standard and mobile
