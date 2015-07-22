@@ -14,11 +14,13 @@ Then load ScrollingSlider.js
 
 ## Features
 
-* List items can be any width
-* List items can each be a different width
-* Left/Right Controls are hidden when fully scrolled left/right
+* Items can be any size and different sizes
+* The speed of the scroll action slows down towards the edges of the container and speeds up towards the middle
+* Left/right Controls are hidden when fully scrolled left/right
+* Controls and be any size as long as they don't overlap
 * Supports two layout modes: standard and mobile
 * Controls are hidden if the list contents are smaller then the container
+* Moves at faster rate towards edge of screen, slower towards the middle
 
 
 ## Caveats
