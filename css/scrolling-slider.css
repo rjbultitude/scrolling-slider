@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
 .content {
     position: relative;
     overflow: hidden;
@@ -17,7 +21,7 @@
     top: 0;
     left: 0; 
     width: 60px;
-    height: 300px;
+    height: 350px;
     float: left;
 }
 
@@ -35,7 +39,7 @@
     opacity: 0.6;
     /*this defines the ineractive area*/
     width: 15%;
-    height: 53.75em;
+    height: 350px;
 }
 
 .direction-control .text {
@@ -89,14 +93,14 @@
 
 .carousel-list li {
     width: 200px;
-    height: 53.75em;
+    height: 350px;
     background: #3466D1;
     float: left;
     list-style-type: none;
 }
 
 .carousel-list li:nth-child(2n) {
-    background-color: #DE8D40;
+    background-color:#b9d134;
 }
 
 @media all and ( max-width: 480px ) {

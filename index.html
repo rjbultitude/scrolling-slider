@@ -10,13 +10,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <!-- Scrolling Slider Plugin Styles -->
         <link rel="stylesheet" type="text/css" href="css/scrolling-slider.css">
+        
+        <!-- GitHub Page Styles -->
         <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css">
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -30,8 +31,12 @@
             <a href="https://github.com/rjbultitude/scrolling-slider/tarball/master" class="btn">Download .tar.gz</a>
         </section>
         <div class="content">
-            <div class="direction-control direction-control-left"><span class="text">Left</span></div>
-            <div class="direction-control direction-control-right"><span class="text">Right</span></div>
+            <div class="direction-control direction-control-left">
+                <span class="text">Left</span>
+            </div>
+            <div class="direction-control direction-control-right">
+                <span class="text">Right</span>
+            </div>
             <div class="carousel">
                 <ul class="carousel-list">
                     <li></li>
@@ -59,8 +64,9 @@
             <h2>Features</h2>
             <ul>
                 <li>Items can be any size and different sizes</li>
-                <li>Left/Right Controls are hidden when fully scrolled left/right</li>
-                <li>Controls and be any size up to 50% of screen or container</li>
+                <li>The speed of the scroll action slows down towards the edges of the container and speeds up towards the middle</li>
+                <li>Left/right Controls are hidden when fully scrolled left/right</li>
+                <li>Controls and be any size as long as they don't overlap</li>
                 <li>Supports two layout modes: standard and mobile</li>
                 <li>Controls are hidden if the list contents are smaller then the container</li>
                 <li>Moves at faster rate towards edge of screen, slower towards the middle</li>
