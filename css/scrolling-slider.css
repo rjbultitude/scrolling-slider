@@ -2,12 +2,12 @@
    Custom styles
    ========================================================================== */
 
-.content {
+.outer-container {
     position: relative;
     overflow: hidden;
 }
 
-.carousel {
+.slider {
     width: 100%;
     overflow-x: scroll;
     overflow-y: visible;
@@ -83,7 +83,7 @@
     right: 0;
 }
 
-.carousel-list {
+.slider-list {
     width: 2800px;
     float: left;
     position: relative;
@@ -91,7 +91,7 @@
     padding: 0;
 }
 
-.carousel-list li {
+.slider-list li {
     width: 200px;
     height: 350px;
     background: #3466D1;
@@ -99,16 +99,16 @@
     list-style-type: none;
 }
 
-.carousel-list li:nth-child(2n) {
+.slider-list li:nth-child(2n) {
     background-color:#b9d134;
 }
 
 @media all and ( max-width: 480px ) {
-    .carousel-list {
+    .slider-list {
         width: 100%;
     }
 
-    .carousel-list li {
+    .slider-list li {
         width: 100%;
     }
 }

@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Scrolling Slider Plugin Styles -->
-        <link rel="stylesheet" type="text/css" href="css/scrolling-slider.css">
+        <link rel="stylesheet" type="text/css" href="css/scrolling-slider-data.css">
         
         <!-- GitHub Page Styles -->
         <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
@@ -30,15 +30,15 @@
             <a href="https://github.com/rjbultitude/scrolling-slider/zipball/master" class="btn">Download .zip</a>
             <a href="https://github.com/rjbultitude/scrolling-slider/tarball/master" class="btn">Download .tar.gz</a>
         </section>
-        <div class="content">
-            <div class="direction-control direction-control-left">
+        <div class="outer-container" data-scslider="container">
+            <div class="direction-control direction-control-left" data-scslider="control" data-scslider-control="left">
                 <span class="text">Left</span>
             </div>
-            <div class="direction-control direction-control-right">
+            <div class="direction-control direction-control-right" data-scslider="control" data-scslider-control="right">
                 <span class="text">Right</span>
             </div>
-            <div class="carousel">
-                <ul class="carousel-list">
+            <div class="slider" tabindex="0" data-scslider="slider">
+                <ul class="slider-list" data-scslider="list">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -57,19 +57,19 @@
             </div>
         </div>
         <article>
-            <h1>Scrolling Slider</h1>
-            <p>A JavaScript plugin which moves list items left/right on hover or via the scrollbar.</p>
-            <h2>Quick start</h2>
-            <p>Simply load and run the script in any app</p>
+            <h1>Scrolling Slider JS</h1>
+            <p>A JavaScript plugin which slides a horizontal list left/right on hover or via the scrollbar.</p>
+            <p>Most slider and carousel controls operate using click events, whereas Scrolling Slider uses mouseenter and mouseleave. This produces a smooth motion that works on touch devices without the need for complex fallbacks or enhancements.</p>
             <h2>Features</h2>
             <ul>
-                <li>Items can be any size and different sizes</li>
-                <li>The speed of the scroll action speeds up towards the edges of the container and slows down towards the middle</li>
+                <li>List items can be any size</li>
+                <li>List items can each be different sizes</li>
+                <li>Keyboard controls work OOTB</li>
                 <li>Left/right Controls are hidden when fully scrolled left/right</li>
-                <li>Controls and be any size as long as they don't overlap</li>
+                <li>Controls and be any size provided they do not overlap</li>
                 <li>Supports two layout modes: standard and mobile</li>
                 <li>Controls are hidden if the list contents are smaller then the container</li>
-                <li>Moves at faster rate towards edge of screen, slower towards the middle</li>
+                <li>Variable scroll action speed</li>
             </ul>
 
             <h2>References</h2>
@@ -77,10 +77,17 @@
             <p><a href="https://github.com/cowboy/jquery-throttle-debounce">Debounce Throttle JQuery plugin</a> by Ben Alman</p>
 
             <h2>Documentation</h2>
-            <p>This plugin was designed to solve the problem of using mouseenter as an event rather than click</p>
-            <p>It works inconjunction with scroll by managing the scroll position</p>
-            <p>To get started simply add the javascript file to yout project and be sure to load jQuery and debounce/throttle first.</p>
-            <p>Inlcude the styles from main.css and adjust the width and height of the list items as necessary</p>
+            <p>It works in conjunction with native scroll by managing the scroll position dynamically</p>
+            <h3>Get started</h3>
+            <p>Add the jQuery 1.7+ to your project</p>
+            <p>Add the jquery.scrolling.slider.js file to your project</p>
+            <p>Include the styles from scrolling-slider.css. The default styles use a consistent width and height but you can set them to anything you likeof the list items as necessary. You can can also </p>
+            <p>Use either classes or data attributes in your HTML as per the example page</p>
+            <p>The mobile mode for this plugin turns off the horiontal scrollign and stacks the list items vertcially. If you want to turn this feature off set the break point to 0 in your app code like so:</p>
+            <pre>scrollingSlider.breakPoint = 0;</pre>
+            <p>To turn off the variable speed controls set scrollingSlider.variableSpeed to false like so</p>
+            <pre>scrollingSlider.variableSpeed = false;</pre>
+            <h3>Module loaders</h3>
             <p>If using a module loader such as CJS or AMD you can load it in the same way you would any other plugin</p>
             <p>Plans are in place to make it fully CJS and AMD compatible</p>
 
@@ -101,7 +108,6 @@
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
         </footer>
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/vendor/jquery.ba-throttle-debounce.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/jquery.scrolling.slider.js"></script>
     </body>
 </html>
