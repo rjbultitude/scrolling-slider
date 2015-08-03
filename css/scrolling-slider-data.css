@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+[data-scslider="container"] {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+[data-scslider="slider"] {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+    position: relative;;
+    clear: both;
+}
+
+.output-event,
+.output {
+    text-align: center;
+    padding: 20px;
+}
+
+[data-scslider="control"] {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    background-color: #cccccc;
+    opacity: 0.6;
+    /*this defines the ineractive area*/
+    width: 15%;
+    height: 350px;
+}
+
+[data-scslider="control"] .text {
+    position: absolute;
+    top: 48%;
+    width: 5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+[data-scslider-control="left"] {
+    left: 0;
+}
+
+[data-scslider-control="left"] .text {
+    left: 2em;
+}
+
+[data-scslider-control="right"] .text {
+    right: 2em;
+}
+
+[data-scslider-control="left"] .text:before {
+    content: "\2329";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: 0;
+}
+
+[data-scslider-control="right"] {
+    right: 0;
+    left: auto;
+}
+
+[data-scslider-control="right"] .text:after {
+    content: "\232A";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    right: 0;
+}
+
+[data-scslider="list"] {
+    width: 2800px;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+[data-scslider="list"] li {
+    width: 200px;
+    height: 350px;
+    background: #3466D1;
+    float: left;
+    list-style-type: none;
+}
+
+[data-scslider="list"] li:nth-child(2n) {
+    background-color:#b9d134;
+}
+
+@media all and ( max-width: 480px ) {
+    [data-scslider="list"] {
+        width: 100%;
+    }
+
+    [data-scslider="list"] li {
+        width: 100%;
+    }
+}
