@@ -218,28 +218,31 @@ $(document).ready(function() {
 			clearIntervalLeft();
 		}
 
-		//Set scroll position(s)
-		function moveItRight() {
-			scrollingSlider.currentScrollPos = scrollingSlider.container.scrollLeft();
+		function getRate() {
+			//set vars
+			var _newScrollRate;
+			//variable speed check
 			if (scrollingSlider.variableSpeed) {
-				var _newScrollPos = 1 + Math.abs(rate);
+				_newScrollRate = 1 + Math.abs(rate);
 			}
 			else {
-				var _newScrollPos = 3;
+				_newScrollRate = 3;
 			}
-			_newScrollPos = scrollingSlider.currentScrollPos + _newScrollPos;
+			return _newScrollRate;
+		}
+
+		//Set scroll position(s)
+		function moveItRight() {
+			//set vars
+			scrollingSlider.currentScrollPos = scrollingSlider.container.scrollLeft();
+			var _newScrollPos = scrollingSlider.currentScrollPos + getRate();
 			scrollingSlider.container.scrollLeft(_newScrollPos);
 		}
 
 		function moveItLeft() {
+			//set vars
 			scrollingSlider.currentScrollPos = scrollingSlider.container.scrollLeft();
-			if (scrollingSlider.variableSpeed) {
-				var _newScrollPos = 1 + Math.abs(rate);
-			}
-			else {
-				var _newScrollPos = 3;
-			}
-			_newScrollPos = scrollingSlider.currentScrollPos - _newScrollPos;
+			var _newScrollPos = scrollingSlider.currentScrollPos - getRate();
 			scrollingSlider.container.scrollLeft(_newScrollPos);
 		}
 
@@ -354,7 +357,7 @@ $(document).ready(function() {
 		checkViewPortSize();
 		controlsMouseMove();
 		assignMouseTouchEvents();
-		assignKeyboardEvents();
+		//assignKeyboardEvents();
 		directionMouseMove();
 		initResize();
 		hideControlsAtEnd();
