@@ -24,9 +24,9 @@ It works in conjunction with native scroll by managing the scroll position dynam
 ### Get started
 Add the jQuery 1.7+ to your project
 Add the jquery.scrolling.slider.js file to your project
-Include the styles from scrolling-slider.css. The default styles use a consistent width and height but you can set them to anything you likeof the list items as necessary. You can can also 
-Use either classes or data attributes in your HTML as per the example page
-The mobile mode for this plugin turns off the horiontal scrollign and stacks the list items vertcially. If you want to turn this feature off set the break point to 0 in your app code like so:</p>
+Include the styles from scrolling-slider.css. The default styles use a consistent width and height but you can set them to anything you like of the list items as necessary.
+You can can also use either classes or data attributes in your HTML as per the example page
+The mobile mode for this plugin turns off the horiontal scrollign and stacks the list items vertcially. If you want to turn this feature off set the break point to 0 in your app code like so:
 ```
 scrollingSlider.breakPoint = 0;
 ```
