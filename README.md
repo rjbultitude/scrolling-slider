@@ -62,5 +62,6 @@ Tested in
 
 A JavaScript plugin which moves list items left/right on hover or via the scrollbar.
 
+View the GitHub page at [Scrolling Slider](http://rjbultitude.github.io/scrolling-slider/)
 
 * Twitter: [@pointbmusic](http://twitter.com/pointbmusic)
