@@ -154,25 +154,25 @@ $(document).ready(function() {
 
 		//Create invervals for animation
 		function setIntervalRight() {
-			scrollerInvervalRight = setInterval(function() {
+			scrollingSlider.scrollerInvervalRight = setInterval(function() {
 				moveItRight();
 			}, scrollingSlider.frameRate);
 		}
 
 		function setIntervalLeft() {
-			scrollerInvervalLeft = setInterval(function() {
+			scrollingSlider.scrollerInvervalLeft = setInterval(function() {
 				moveItLeft();
 			}, scrollingSlider.frameRate);
 		}
 
 		//Clear intervals at stops
 		function clearIntervalRight() {
-			clearInterval(scrollerInvervalRight);
+			clearInterval(scrollingSlider.scrollerInvervalRight);
 			scrollingSlider.scrollerInvervalRight = 0;
 		}
 
 		function clearIntervalLeft() {
-			clearInterval(scrollerInvervalLeft);
+			clearInterval(scrollingSlider.scrollerInvervalLeft);
 			scrollingSlider.scrollerInvervalLeft = 0;
 		}
 
@@ -223,7 +223,7 @@ $(document).ready(function() {
 			var _newScrollRate;
 			//variable speed check
 			if (scrollingSlider.variableSpeed) {
-				_newScrollRate = 1 + Math.abs(rate);
+				_newScrollRate = 1 + Math.abs(scrollingSlider.rate);
 			}
 			else {
 				_newScrollRate = 3;
@@ -254,9 +254,9 @@ $(document).ready(function() {
 				var w = $this.width();
 
 				if (left) {
-					rate = ((w - e.pageX - $(this).offset().left + 1) / w) * 3.5;
+					scrollingSlider.rate = ((w - e.pageX - $(this).offset().left + 1) / w) * 3.5;
 				} else {
-					rate = -((e.pageX - $(this).offset().left + 1) / w) * 3.5;
+					scrollingSlider.rate = -((e.pageX - $(this).offset().left + 1) / w) * 3.5;
 				}
 			});
 		}
